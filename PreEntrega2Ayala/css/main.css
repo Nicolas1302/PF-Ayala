@@ -1,0 +1,230 @@
+/*PARA TODAS LAS PAGINAS*/
+.fondo1 {
+    background-image: url("../imagen/fondopagina3.jpg");
+    background-repeat:repeat-y;
+    background-size:auto;
+}
+
+
+.fondo2 {
+    background-image: url("../imagen/fondopagina2.jpg");
+    background-repeat:repeat;
+    background-size:auto;
+}
+
+
+
+
+
+/*PAGINA INICIO*/
+
+
+.section {
+    margin-top: 20px;
+    padding: 40px;
+    display: flex;
+    text-align: right;   
+}
+
+@media (min-width: 320px) and (max-width: 480px) { /*tamaño para telefono en modo vertical y horizontal*/
+    .section {
+        display: block;
+        width: auto auto;
+    }
+}
+
+.section__textoinicio {
+    color: blueviolet;
+    font-size: 50px;
+    padding: 20px;
+    margin-left: 200px;
+    width: 400px;
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {  /*tamaño para telefono en modo vertical y horizontal*/
+    .section__textoinicio {
+        font-size: 20px;
+        text-align: center;
+        margin-left:-15px;
+    }
+}
+
+.section__imageninicio {
+    margin-left: 50px;
+    width: 400px; 
+}
+
+@media (min-width: 320px) and (max-width: 480px) { /*tamaño para telefono en modo vertical y horizontal*/
+    .section__imageninicio {
+        margin-left: -15px;
+        
+    }
+}
+
+.section2__parrafoinicio {
+    padding: 40px;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(223, 248, 250);
+}
+
+
+
+/*PAGINA CONTACTO*/
+
+.contacto__titulo {
+    font-size: 40px;
+    text-align: center;
+    color: azure;
+}
+
+form {
+    padding: 30px;
+    text-align: center;
+    color: azure;
+}
+
+
+
+/*PAGINA SERVICIO*/
+
+.servicio__titulo {
+    color: rgb(241, 238, 25);
+    font-size: 35px;
+    margin-left: 25px;
+}
+
+.parrafoservicio {
+    display: flex;
+    padding: 20px;     
+}
+
+@media (min-width: 320px) and (max-width: 480px) { /*tamaño para telefono en modo vertical y horizontal*/
+    .parrafoservicio {
+        display: block;
+    }
+}
+
+.parrafoservicio__titulo {
+    font-size: 20px;
+    margin-top: 50px;
+    color: rgb(250, 226, 6);
+    margin-left: 200px;
+    width: 250px;
+    text-align:center;  
+}
+
+@media (min-width: 320px) and (max-width: 480px) {  /*tamaño para telefono en modo vertical y horizontal*/
+    .parrafoservicio__titulo {
+        font-size: 20px;
+        text-align: center;
+        margin-left:auto;
+        width: auto;
+    }
+}
+
+.parrafoservicio__descripcion h2{
+    font-size: 20px;
+    margin-left: 180px;
+    color: rgb(245, 115, 115);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {  /*tamaño para telefono en modo vertical y horizontal*/
+    .parrafoservicio__descripcion h2 {
+        font-size: 16px;
+        text-align:center;
+        margin-left: auto;
+    }
+}
+
+
+.parrafoservicio2 {
+    display:flex;
+    padding: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {  /*tamaño para telefono en modo vertical y horizontal*/
+    .parrafoservicio2 {
+        display: block;
+        
+    }
+}
+
+.parrafoservicio2__titulo { 
+    font-size: 20px;
+    margin-top: 50px;
+    color: rgb(250, 226, 6);
+    margin-left: 200px;
+    text-align:center; 
+    width: 250px; 
+}
+
+@media (min-width: 320px) and (max-width: 480px) {  /*tamaño para telefono en modo vertical y horizontal*/
+    .parrafoservicio2__titulo {
+        font-size: 20px;
+        text-align: center;
+        margin-left:auto;
+        width: auto;
+    }
+}
+
+.parrafoservicio2__descripcion h2 {
+    font-size: 20px;
+    margin-left: 180px;
+    color: rgb(245, 115, 115);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {  /*tamaño para telefono en modo vertical y horizontal*/
+    .parrafoservicio2__descripcion h2 {
+        font-size: 16px;
+        text-align:center;
+        margin-left: auto;
+    }
+}
+
+
+
+/* PAGINA QUINES SOMOS*/
+
+.col .text-center {
+    color: rgb(241, 238, 25);
+    font-size: 35px;
+    margin-left: 25px;
+}
+
+.textoquienessomos .text-center {
+    font-size: 25px;
+    color: rgb(247, 58, 5);
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 40px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {  /*tamaño para telefono en modo vertical y horizontal*/
+    .textoquienessomos .text-center {
+        font-size: 20px;
+        text-align:center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+iframe {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {  /*tamaño para telefono en modo vertical y horizontal*/
+    iframe {
+        margin-left: 40px;
+        padding: 20px;
+        width: auto;
+        height: auto;
+
+
+    }
+}
+
+
+
