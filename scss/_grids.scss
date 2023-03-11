@@ -1,0 +1,49 @@
+.grid {
+    display: grid;
+    justify-items: stretch;
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    grid-template-rows: auto auto;
+    height: 500px;
+    align-items: stretch;
+  }
+
+.grid div {
+    border: solid 1px;
+    font-size: 21px;
+    padding: 5px;
+    
+}
+
+.imagen1{
+    background-image: url(../imagen/limpiezacpu.jpg);
+    background-repeat: no-repeat;
+}
+
+.imagen2{
+    background-image: url(../imagen/limpiezanotebook.jpg);
+    background-repeat: no-repeat;
+}
+
+.imagen3{
+    background-image: url(../imagen/mantenimientosoftware.jpeg);
+    background-repeat: no-repeat;
+}
+
+.imagen4{
+    background-image: url(../imagen/limpiezapci.jpg);
+    background-repeat: no-repeat;
+}
+
+.imagen5{
+    background-image: url(../imagen/mantenimientohardware.jpg);
+    background-repeat: no-repeat;
+}
+
+.imagen6{
+    background-image: url(../imagen/mantenimientohardware2.jpg);
+    background-repeat: no-repeat;
+}

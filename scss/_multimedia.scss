@@ -1,0 +1,13 @@
+.sectioninicio__imageninicio {
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 400px;
+    height: 300px;
+    transition: width 1s, height 1s; 
+}
+
+.sectioninicio__imageninicio:hover{
+    width: 430px;
+    height: 330px;
+}
+

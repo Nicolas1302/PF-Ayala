@@ -1,0 +1,242 @@
+@charset "UTF-8";
+.fondo1 {
+  background-image: url("../imagen/fondopagina3.jpg");
+  background-repeat: repeat-y;
+  background-size: auto; }
+
+.fondo2 {
+  background-image: url("../imagen/fondopagina2.jpg");
+  background-repeat: repeat;
+  background-size: auto; }
+
+.sectionservicio1 {
+  display: flex;
+  padding: 20px;
+  margin-top: 50px; }
+
+.sectionservicio2 {
+  display: flex;
+  padding: 20px; }
+
+.sectioninicio {
+  padding: 40px;
+  display: flex;
+  margin-top: 20px;
+  text-align: right; }
+
+.col {
+  text-align: center; }
+
+#containertecnologia {
+  margin-top: 50px; }
+
+.section2__parrafoinicio {
+  padding: 40px;
+  font-size: 25px;
+  text-align: center;
+  color: #dff8fa; }
+
+.parrafo__quienessomos .text-center {
+  font-size: 25px;
+  color: #f73a05;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 40px; }
+
+.sectioninicio__textoinicio {
+  color: blueviolet;
+  font-size: 50px;
+  padding: 20px;
+  margin-left: 200px;
+  width: 400px;
+  text-align: center; }
+
+.contacto__titulo {
+  margin-top: 50px;
+  font-size: 40px;
+  text-align: center;
+  color: azure; }
+
+.col .text-center {
+  color: #f1ee19;
+  font-size: 35px;
+  margin-left: 25px; }
+
+.sectionservicio1__titulo {
+  font-size: 20px;
+  margin-top: 50px;
+  color: #fae206;
+  margin-left: 200px;
+  width: 250px;
+  text-align: center; }
+
+.sectionservicio1__descripcion h2 {
+  font-size: 20px;
+  margin-left: 180px;
+  color: #f57373; }
+
+.sectionservicio2__titulo {
+  font-size: 20px;
+  margin-top: 50px;
+  color: #fae206;
+  margin-left: 200px;
+  text-align: center;
+  width: 250px; }
+
+.sectionservicio2__descripcion h2 {
+  font-size: 20px;
+  margin-left: 180px;
+  color: #f57373; }
+
+.sectioninicio__imageninicio {
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 400px;
+  height: 300px;
+  transition: width 1s, height 1s; }
+
+.sectioninicio__imageninicio:hover {
+  width: 430px;
+  height: 330px; }
+
+form {
+  padding: 30px;
+  text-align: center;
+  color: azure; }
+
+.grid {
+  display: grid;
+  justify-items: stretch;
+  margin-top: 40px;
+  margin-left: 150px;
+  margin-right: 150px;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+  grid-template-rows: auto auto;
+  height: 500px;
+  align-items: stretch; }
+
+.grid div {
+  border: solid 1px;
+  font-size: 21px;
+  padding: 5px; }
+
+.imagen1 {
+  background-image: url(../imagen/limpiezacpu.jpg);
+  background-repeat: no-repeat; }
+
+.imagen2 {
+  background-image: url(../imagen/limpiezanotebook.jpg);
+  background-repeat: no-repeat; }
+
+.imagen3 {
+  background-image: url(../imagen/mantenimientosoftware.jpeg);
+  background-repeat: no-repeat; }
+
+.imagen4 {
+  background-image: url(../imagen/limpiezapci.jpg);
+  background-repeat: no-repeat; }
+
+.imagen5 {
+  background-image: url(../imagen/mantenimientohardware.jpg);
+  background-repeat: no-repeat; }
+
+.imagen6 {
+  background-image: url(../imagen/mantenimientohardware2.jpg);
+  background-repeat: no-repeat; }
+
+@media (max-width: 700px) {
+  /*tamaño para telefono en modo vertical y horizontal*/
+  .sectioninicio {
+    display: block;
+    text-align: center; }
+
+  .sectioninicio__textoinicio {
+    font-size: 20px;
+    width: 90%;
+    text-align: center;
+    padding: auto;
+    margin-left: 0; }
+
+  .sectioninicio__imageninicio {
+    margin-top: auto;
+    margin-left: auto;
+    width: 90%;
+    height: 90%;
+    transition: width 1s, height 1s; }
+
+  .sectioninicio__imageninicio:hover {
+    width: 100%;
+    height: 100%; }
+
+  .section2__parrafoinicio {
+    padding: auto;
+    font-size: 15px;
+    text-align: center;
+    color: #dff8fa; }
+
+  .sectionservicio1 {
+    display: block; }
+
+  .sectionservicio1__titulo {
+    font-size: 16px;
+    margin-top: auto;
+    margin-left: auto;
+    width: auto; }
+
+  .sectionservicio1__descripcion h2 {
+    font-size: 15px;
+    text-align: center;
+    margin-left: auto; }
+
+  .sectionservicio2 {
+    display: block; }
+
+  .sectionservicio2__titulo {
+    font-size: 16px;
+    margin-top: auto;
+    margin-left: auto;
+    width: auto; }
+
+  .sectionservicio2__descripcion h2 {
+    font-size: 15px;
+    text-align: center;
+    margin-left: auto; }
+
+  .parrafo__quienessomos .text-center {
+    font-size: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px; }
+
+  .col .text-center {
+    font-size: 16px; }
+
+  iframe {
+    width: 90%;
+    height: auto; }
+
+  .grid {
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    height: 900px; }
+
+  #filatecnologia {
+    display: block;
+    padding-top: 20px; }
+
+  .imagentecnologias {
+    text-align: center;
+    width: 90%;
+    height: 90%; }
+
+  form input {
+    width: 100%; }
+
+  form #mensaje {
+    width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */

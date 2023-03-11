@@ -1,0 +1,138 @@
+@mixin servicetitulo-font-mar-wid {
+    font-size: 16px;
+    margin-top: auto;
+    margin-left:auto;
+    width: auto;
+}
+
+@mixin servicedescripcion-font-text-margl {
+    font-size: 15px;
+    text-align:center;
+    margin-left: auto;
+}
+
+
+@media (max-width: 700px) { /*tamaño para telefono en modo vertical y horizontal*/
+    .sectioninicio {
+        display: block;
+        text-align: center;
+    }
+
+    .sectioninicio__textoinicio {
+        font-size: 20px;
+        width: 90%;
+        text-align: center;
+        padding: auto;
+        margin-left: 0;
+    }
+
+    
+    .sectioninicio__imageninicio {
+        margin-top: auto;
+        margin-left: auto;
+        width: 90%;
+        height: 90%;
+        transition: width 1s, height 1s;
+    }
+
+    .sectioninicio__imageninicio:hover{
+        width: 100%;
+        height: 100%;
+    }
+
+    
+
+
+    
+        
+    
+
+    .section2__parrafoinicio {
+        padding: auto;
+        font-size: 15px;
+        text-align: center;
+        color: rgb(223, 248, 250);
+    }
+
+    .sectionservicio1 {
+        display: block;
+    }
+
+    .sectionservicio1__titulo {
+        @include servicetitulo-font-mar-wid;
+    }
+
+    .sectionservicio1__descripcion h2 {
+        @include servicedescripcion-font-text-margl;
+    }
+
+    .sectionservicio2 {
+        display: block;
+        
+    }
+
+    .sectionservicio2__titulo {
+        @include servicetitulo-font-mar-wid;
+    }
+
+    .sectionservicio2__descripcion h2 {
+        @include servicedescripcion-font-text-margl;
+    }
+
+    .parrafo__quienessomos .text-center {
+        font-size: 15px;
+        text-align:center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+        
+    }
+
+    .col .text-center {
+        font-size: 16px;
+        
+    }
+
+    iframe {
+        width: 90%;
+        height: auto;
+    }
+
+    .grid { 
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-gap: 10px;
+        height: 900px;
+    }
+
+   
+
+    #filatecnologia{
+        display: block;
+        padding-top: 20px;
+    }
+
+
+    .imagentecnologias{
+        text-align: center;
+        width: 90%;
+        height: 90%;
+       
+    }
+
+    form input{
+        width: 100%;
+    }
+
+    form #mensaje{
+        width: 100%;
+        
+    }
+
+    
+
+
+}
+
+
