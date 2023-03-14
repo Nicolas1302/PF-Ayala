@@ -16,36 +16,25 @@
     .sectioninicio {
         display: block;
         text-align: center;
+        .sectioninicio__textoinicio {
+            font-size: 20px;
+            width: 90%;
+            text-align: center;
+            padding: auto;
+            margin-left: 0;
+        }
+        .sectioninicio__imageninicio {
+            margin-top: auto;
+            margin-left: auto;
+            width: 90%;
+            height: 90%;
+            transition: width 1s, height 1s;
+        }
+        .sectioninicio__imageninicio:hover{
+            width: 100%;
+            height: 100%;
+        }
     }
-
-    .sectioninicio__textoinicio {
-        font-size: 20px;
-        width: 90%;
-        text-align: center;
-        padding: auto;
-        margin-left: 0;
-    }
-
-    
-    .sectioninicio__imageninicio {
-        margin-top: auto;
-        margin-left: auto;
-        width: 90%;
-        height: 90%;
-        transition: width 1s, height 1s;
-    }
-
-    .sectioninicio__imageninicio:hover{
-        width: 100%;
-        height: 100%;
-    }
-
-    
-
-
-    
-        
-    
 
     .section2__parrafoinicio {
         padding: auto;
@@ -56,27 +45,23 @@
 
     .sectionservicio1 {
         display: block;
-    }
-
-    .sectionservicio1__titulo {
-        @include servicetitulo-font-mar-wid;
-    }
-
-    .sectionservicio1__descripcion h2 {
-        @include servicedescripcion-font-text-margl;
+        .sectionservicio1__titulo {
+            @include servicetitulo-font-mar-wid;
+        }
+        .sectionservicio1__descripcion h2 {
+            @include servicedescripcion-font-text-margl;
+        }
     }
 
     .sectionservicio2 {
         display: block;
+        .sectionservicio2__titulo {
+            @include servicetitulo-font-mar-wid;
+        }
+        .sectionservicio2__descripcion h2 {
+            @include servicedescripcion-font-text-margl;
+        }
         
-    }
-
-    .sectionservicio2__titulo {
-        @include servicetitulo-font-mar-wid;
-    }
-
-    .sectionservicio2__descripcion h2 {
-        @include servicedescripcion-font-text-margl;
     }
 
     .parrafo__quienessomos .text-center {
