@@ -2,12 +2,12 @@
 
 .sectionservicio1 {
     display: flex;
-    padding: 20px;
+    padding: 10px;
     margin-top: 50px; 
     .sectionservicio1__titulo {
         font-size: 20px;
         margin-top: 50px;
-        color: rgb(250, 226, 6);
+        color: $amarillo;
         margin-left: 200px;
         width: 250px;
         text-align:center;  
@@ -16,17 +16,17 @@
     .sectionservicio1__descripcion h2{
         font-size: 20px;
         margin-left: 180px;
-        color: rgb(245, 115, 115);
+        color: $rojo;
     }  
 }
 
 .sectionservicio2 {
     display:flex;
-    padding: 20px;
+    padding: 10px;
     .sectionservicio2__titulo { 
         font-size: 20px;
         margin-top: 50px;
-        color: rgb(250, 226, 6);
+        color: $amarillo;
         margin-left: 200px;
         text-align:center; 
         width: 250px; 
@@ -35,15 +35,18 @@
     .sectionservicio2__descripcion h2 {
         font-size: 20px;
         margin-left: 180px;
-        color: rgb(245, 115, 115);
+        color: $rojo;
     }
 }
 
+.titulologo {
+    text-decoration: none;
+}
+
+
 .sectioninicio {
-    padding: 40px;
-    display: flex;
-    margin-top: 20px;
-    text-align: right;   
+    padding: 20px;
+    display: flex; 
        
 }
 

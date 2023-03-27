@@ -12,13 +12,14 @@
 }
 
 
-@media (max-width: 700px) { /*tamaño para telefono en modo vertical y horizontal*/
+@media (min-width: 700px) and (max-width: 1000px) { /*tamaño para telefono en modo vertical y horizontal*/
     .sectioninicio {
-        display: block;
+        display: flex;
         text-align: center;
+
         .sectioninicio__textoinicio {
-            font-size: 20px;
-            width: 90%;
+            font-size: 35px;
+            width: 70%;
             text-align: center;
             padding: auto;
             margin-left: 0;
@@ -26,21 +27,110 @@
         .sectioninicio__imageninicio {
             margin-top: auto;
             margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: 50%;
+            transition: width 1s, height 1s;
+        }
+        .sectioninicio__imageninicio:hover{
+            width: 55%;
+            height: 55%;
+        }
+    }
+
+    .sectionservicio1 {
+        display: flex;
+        padding: 20px;
+        margin-top: 50px; 
+        .sectionservicio1__titulo {
+            font-size: 15px;
+            margin-top: 50px;
+            color: $amarillo;
+            margin-left: 100px;
+            width: 250px;
+            text-align:center;  
+        }
+        
+        .sectionservicio1__descripcion h2{
+            font-size: 15px;
+            margin-left: 100px;
+            margin-right: 50px;
+            color: $rojo;
+        }  
+    }
+    
+    .sectionservicio2 {
+        display:flex;
+        padding: 20px;
+        .sectionservicio2__titulo { 
+            font-size: 15px;
+            margin-top: 50px;
+            color: $amarillo;
+            margin-left: 100px;
+            text-align:center; 
+            width: 250px; 
+        }
+        
+        .sectionservicio2__descripcion h2 {
+            font-size: 15px;
+            margin-left: 100px;
+            margin-right: 50px;
+            color: $rojo;
+        }
+    }
+
+    .grid {
+        margin-left: 30px;
+        grid-template-columns: auto auto; 
+        grid-gap: 10px;
+        grid-template-rows: auto auto auto;
+        height: 900px;
+        div {
+            border: none;
+            img{
+                width: 90%;
+                height: 80%;
+                border: solid 10px;
+            }
+            
+            
+        }
+    }
+}
+
+
+
+
+@media (max-width: 700px) { /*tamaño para telefono en modo vertical y horizontal*/
+    .sectioninicio {
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin-top: 0;
+        .sectioninicio__textoinicio {
+            font-size: 20px;
+            padding: auto;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            text-align: center;    
+        }
+        .sectioninicio__imageninicio {
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
             width: 90%;
             height: 90%;
             transition: width 1s, height 1s;
         }
-        .sectioninicio__imageninicio:hover{
-            width: 100%;
-            height: 100%;
-        }
+        
     }
 
     .section2__parrafoinicio {
         padding: auto;
         font-size: 15px;
         text-align: center;
-        color: rgb(223, 248, 250);
+        color: $blanco;
     }
 
     .sectionservicio1 {
@@ -84,11 +174,21 @@
     }
 
     .grid { 
+        margin-top: 20px;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
         grid-template-columns: repeat(1, 1fr); 
         grid-gap: 10px;
-        height: 900px;
+        height: auto;
+        div {
+            border: none;
+            img{
+                width: 90%;
+                height: 90%;
+                border: solid 10px;
+            }
+        }
     }
 
    
@@ -114,10 +214,8 @@
         width: 100%;
         
     }
-
-    
-
-
 }
+
+
 
 

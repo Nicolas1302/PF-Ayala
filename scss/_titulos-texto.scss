@@ -1,23 +1,22 @@
 .sectioninicio__textoinicio {
-    color: blueviolet;
+    color:$violeta;
     font-size: 50px;
     padding: 20px;
-    margin-left: 200px;
+    margin-left: 100px;
     width: 400px;
     text-align: center;
 }
 
 
 .contacto__titulo {
-    margin-top: 50px;
     font-size: 40px;
     text-align: center;
-    color: azure;
+    color: $blanco;
 }
 
 
 .col .text-center {
-    color: rgb(241, 238, 25);
+    color: $amarillo;
     font-size: 35px;
     margin-left: 25px;
 }
