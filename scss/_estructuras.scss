@@ -1,41 +1,43 @@
-
-
-.sectionservicio1 {
+@mixin flex-pad {
     display: flex;
     padding: 10px;
+}
+
+@mixin fon-mar-col-wid-tex-escritorio {
+    font-size: 20px;
+    margin-top: 50px;
+    color: $amarillo;
+    margin-left: 200px;
+    width: 250px;
+    text-align:$centrado;
+}
+
+@mixin fon-mar-col-escritorio {
+    font-size: 20px;
+    margin-left: 180px;
+    color: $blancorojo;
+}
+
+.sectionservicio1 {
+    @include flex-pad;
     margin-top: 50px; 
     .sectionservicio1__titulo {
-        font-size: 20px;
-        margin-top: 50px;
-        color: $amarillo;
-        margin-left: 200px;
-        width: 250px;
-        text-align:center;  
+        @include fon-mar-col-wid-tex-escritorio;
     }
     
     .sectionservicio1__descripcion h2{
-        font-size: 20px;
-        margin-left: 180px;
-        color: $rojo;
+        @include fon-mar-col-escritorio;
     }  
 }
 
 .sectionservicio2 {
-    display:flex;
-    padding: 10px;
+    @include flex-pad;
     .sectionservicio2__titulo { 
-        font-size: 20px;
-        margin-top: 50px;
-        color: $amarillo;
-        margin-left: 200px;
-        text-align:center; 
-        width: 250px; 
+        @include fon-mar-col-wid-tex-escritorio; 
     }
     
     .sectionservicio2__descripcion h2 {
-        font-size: 20px;
-        margin-left: 180px;
-        color: $rojo;
+        @include fon-mar-col-escritorio;
     }
 }
 
@@ -51,7 +53,7 @@
 }
 
 .col{
-    text-align: center;
+    text-align: $centrado;
     
 }
 
@@ -59,3 +61,6 @@
     margin-top: 50px;
 }
 
+.imagentecnologias{
+    margin-bottom: 20px;
+}

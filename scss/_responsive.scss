@@ -1,26 +1,41 @@
-@mixin servicetitulo-font-mar-wid {
+@mixin servicetitulo-font-mar-wid-max700 {
     font-size: 16px;
     margin-top: auto;
     margin-left:auto;
     width: auto;
 }
 
-@mixin servicedescripcion-font-text-margl {
+@mixin servicedescripcion-font-text-margl-max700 {
     font-size: 15px;
-    text-align:center;
+    text-align:$centrado;
     margin-left: auto;
+}
+
+@mixin servicetitulo-font-mar-col-wid-text-min700-max1000 {
+    font-size: 15px;
+    margin-top: 50px;
+    color: $amarillo;
+    margin-left: 100px;
+    width: 250px;
+    text-align:$centrado; 
+}
+
+@mixin servicedescripcion-font-margl-col-min700-max1000 {
+    font-size: 15px;
+    margin-left: 100px;
+    margin-right: 50px;
 }
 
 
 @media (min-width: 700px) and (max-width: 1000px) { /*tamaño para telefono en modo vertical y horizontal*/
     .sectioninicio {
         display: flex;
-        text-align: center;
+        text-align: $centrado;
 
         .sectioninicio__textoinicio {
             font-size: 35px;
             width: 70%;
-            text-align: center;
+            text-align: $centrado;
             padding: auto;
             margin-left: 0;
         }
@@ -43,19 +58,11 @@
         padding: 20px;
         margin-top: 50px; 
         .sectionservicio1__titulo {
-            font-size: 15px;
-            margin-top: 50px;
-            color: $amarillo;
-            margin-left: 100px;
-            width: 250px;
-            text-align:center;  
+            @include servicetitulo-font-mar-col-wid-text-min700-max1000;
         }
         
         .sectionservicio1__descripcion h2{
-            font-size: 15px;
-            margin-left: 100px;
-            margin-right: 50px;
-            color: $rojo;
+            @include servicedescripcion-font-margl-col-min700-max1000;
         }  
     }
     
@@ -63,23 +70,15 @@
         display:flex;
         padding: 20px;
         .sectionservicio2__titulo { 
-            font-size: 15px;
-            margin-top: 50px;
-            color: $amarillo;
-            margin-left: 100px;
-            text-align:center; 
-            width: 250px; 
+            @include servicetitulo-font-mar-col-wid-text-min700-max1000; 
         }
         
         .sectionservicio2__descripcion h2 {
-            font-size: 15px;
-            margin-left: 100px;
-            margin-right: 50px;
-            color: $rojo;
+            @include servicedescripcion-font-margl-col-min700-max1000;
         }
     }
 
-    .grid {
+    .grid--servicio {
         margin-left: 30px;
         grid-template-columns: auto auto; 
         grid-gap: 10px;
@@ -96,6 +95,25 @@
             
         }
     }
+    .section3__novedadesinicio {
+        font-size: 25px;
+    }
+    
+    .section3__grid-inicio {
+        grid-gap: 10px;
+        height: 250px;
+        div {
+            text-align: center;
+            img{
+                border: solid 10px;
+                width: 90%;
+                height: 80%;
+            }  
+            h3 {
+                font-size: 15px;
+            }   
+        }
+    }
 }
 
 
@@ -104,7 +122,7 @@
 @media (max-width: 700px) { /*tamaño para telefono en modo vertical y horizontal*/
     .sectioninicio {
         display: block;
-        text-align: center;
+        text-align: $centrado;
         padding: 0;
         margin-top: 0;
         .sectioninicio__textoinicio {
@@ -113,7 +131,7 @@
             margin-left: auto;
             margin-right: auto;
             width: 90%;
-            text-align: center;    
+            text-align: $centrado;    
         }
         .sectioninicio__imageninicio {
             margin-top: auto;
@@ -129,34 +147,37 @@
     .section2__parrafoinicio {
         padding: auto;
         font-size: 15px;
-        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: $centrado;
         color: $blanco;
     }
 
     .sectionservicio1 {
         display: block;
+        margin-top: 10px; 
         .sectionservicio1__titulo {
-            @include servicetitulo-font-mar-wid;
+            @include servicetitulo-font-mar-wid-max700;
         }
         .sectionservicio1__descripcion h2 {
-            @include servicedescripcion-font-text-margl;
+            @include servicedescripcion-font-text-margl-max700;
         }
     }
 
     .sectionservicio2 {
         display: block;
         .sectionservicio2__titulo {
-            @include servicetitulo-font-mar-wid;
+            @include servicetitulo-font-mar-wid-max700;
         }
         .sectionservicio2__descripcion h2 {
-            @include servicedescripcion-font-text-margl;
+            @include servicedescripcion-font-text-margl-max700;
         }
         
     }
 
     .parrafo__quienessomos .text-center {
         font-size: 15px;
-        text-align:center;
+        text-align:$centrado;
         margin-left: auto;
         margin-right: auto;
         padding: 5px;
@@ -173,9 +194,9 @@
         height: auto;
     }
 
-    .grid { 
+    .grid-servicio { 
         margin-top: 20px;
-        text-align: center;
+        text-align: $centrado;
         margin-left: auto;
         margin-right: auto;
         grid-template-columns: repeat(1, 1fr); 
@@ -191,6 +212,26 @@
         }
     }
 
+    .section3__novedadesinicio {
+        font-size: 20px;
+    }
+    
+    .section3__grid-inicio {
+        grid-template-columns: repeat(1, 1fr); 
+        height: auto;
+        div {
+            text-align: center;
+            img{
+                border: solid 10px;
+                width: 80%;
+                height: 80%;
+            }  
+            h3 {
+                font-size:17px;
+            }   
+        }
+    }
+
    
 
     #filatecnologia{
@@ -200,9 +241,10 @@
 
 
     .imagentecnologias{
-        text-align: center;
+        text-align: $centrado;
         width: 90%;
         height: 90%;
+        margin-bottom: 20px;
        
     }
 
@@ -211,8 +253,12 @@
     }
 
     form #mensaje{
-        width: 100%;
+        width: 80%;
         
+    }
+
+    #containertecnologia{
+        margin-top: 0;
     }
 }
 

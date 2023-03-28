@@ -1,7 +1,7 @@
 form {
     div{
-        text-align: center;
-        color: azure;
+        text-align: $centrado;
+        color: $blanco;
         margin-bottom: 10px;
         label{
             display: block;
@@ -17,17 +17,17 @@ form {
     }
 
     .boton {
-            input{
-                background-color: rgb(194, 201, 193);
-                color: black;
-                border: 6px solid #353635; /* Green */
-                border-radius: 20px;
-                transition: background-color 1s, color 1s ;
-            }
-            input:hover{
-                background-color: black;
-                color: white;
-            }
+        input{
+            background-color: $blanco;
+            color: $negro;
+            border: 6px solid #353635; /* Green */
+            border-radius: 20px;
+            transition: background-color 1s, color 1s ;
+        }
+        input:hover{
+            background-color: $negro;
+            color: $blanco;
+        }
     }
         
     
